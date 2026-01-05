@@ -1,0 +1,82 @@
+* {
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+body {
+  background: #f4f6f9;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.table-container {
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 12px;
+  width: 100%;
+  max-width: 1000px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+}
+
+.table-container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #1a237e;
+}
+
+.loading {
+  font-size: 18px;
+  font-weight: 500;
+  color: #333;
+}
+
+.points-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.points-table thead {
+  background: #1a237e;
+  color: white;
+}
+
+.points-table th,
+.points-table td {
+  padding: 10px;
+  text-align: center;
+}
+
+.points-table th {
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+.points-table tbody tr {
+  border-bottom: 1px solid #e0e0e0;
+  transition: background 0.2s;
+}
+
+.points-table tbody tr:hover {
+  background: #f1f3f8;
+}
+
+.team {
+  text-align: left;
+  font-weight: 600;
+}
+
+.points {
+  font-weight: bold;
+  color: #2e7d32;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .points-table th,
+  .points-table td {
+    padding: 8px;
+    font-size: 13px;
+  }
+}
