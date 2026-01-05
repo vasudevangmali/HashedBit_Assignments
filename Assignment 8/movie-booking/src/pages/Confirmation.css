@@ -1,0 +1,77 @@
+* {
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+.confirmation-container {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #1e3c72, #2a5298);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ticket {
+  background: #ffffff;
+  width: 100%;
+  max-width: 420px;
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.35);
+  text-align: center;
+  position: relative;
+}
+
+/* Ticket notch effect */
+.ticket::before,
+.ticket::after {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background: #1e3c72;
+  border-radius: 50%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.ticket::before {
+  left: -10px;
+}
+
+.ticket::after {
+  right: -10px;
+}
+
+.ticket h2 {
+  color: #2e7d32;
+  margin-bottom: 20px;
+}
+
+.ticket-details {
+  text-align: left;
+  margin-bottom: 25px;
+}
+
+.ticket-details p {
+  font-size: 15px;
+  margin-bottom: 8px;
+  color: #333;
+}
+
+/* Button */
+.home-btn {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  background: #e50914;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.home-btn:hover {
+  background: #c40812;
+}

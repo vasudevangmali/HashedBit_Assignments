@@ -1,0 +1,169 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", Arial, sans-serif;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    background-color: #f8fafc;
+    color: #1f2937;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Header */
+header {
+    background: #1e40af;
+    color: #ffffff;
+    padding: 5px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 26px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.social-links a {
+    color: #e0f2fe;
+    margin-left: 15px;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.social-links a:hover {
+    color: #38bdf8;
+    text-decoration: underline;
+}
+
+/* Menu Bar */
+nav {
+    background: #2563eb;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 10px 25px;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+nav ul li a:hover {
+    color: #e0f2fe;
+    text-decoration: underline;
+}
+
+/* Main Layout */
+.container {
+    display: flex;
+    flex: 1;
+    gap: 20px;
+    padding: 15px;
+    width: 100%;
+}
+
+/* Side Bar */
+aside {
+    flex: 0 0 260px;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid #e5e7eb;
+    align-items: stretch;
+}
+
+aside h3 {
+    color: #1e40af;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+aside p,
+aside ul li {
+    color: #374151;
+}
+
+aside p {
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+aside ul {
+    padding-left: 20px;
+}
+
+aside ul li {
+    margin-bottom: 8px;
+    font-size: 14px;
+}
+
+/* Main */
+main {
+    flex: 1; 
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    align-content: start;
+}
+
+.box {
+    background-color: #ffffff;
+    border: 1px solid #e5e7eb;
+    padding: 15px;
+    border-radius: 12px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.box h3 {
+    color: #1e40af;
+    font-size: 18px;
+    margin-bottom: 8px;
+}
+
+.box img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin: 10px 0;
+}
+
+.box p {
+    font-weight: 600;
+    color: #374151;
+}
+
+.box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 22px rgba(37, 99, 235, 0.25);
+}
+
+/* Footer */
+footer {
+    background-color: #1e40af;
+    color: #e0f2fe;
+    text-align: center;
+    padding: 10px;
+    margin-top: 5px;
+    font-size: 14px;
+}
